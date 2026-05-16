@@ -56,7 +56,7 @@ body {
     -webkit-backdrop-filter: blur(16px);
     border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: 20px;
-    padding: 3rem;
+    padding: 2rem;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
 
@@ -241,13 +241,13 @@ body {
 }
 
 .hero-content {
-    max-width: 650px;
+    max-width: 500px;
 }
 
 .hero-content h1 {
-    font-size: 3.5rem;
+    font-size: 2.8rem;
     line-height: 1.2;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
     font-weight: 800;
 }
 
@@ -629,8 +629,34 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .hero-content {
+        max-width: 75%;
+        margin-right: auto;
+    }
+
     .hero-content h1 {
-        font-size: 2.5rem;
+        font-size: 1.4rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+
+    .glass-panel {
+        padding: 1rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .hero-buttons .btn {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+        text-align: center;
     }
     
     .mobile-menu-btn {
